@@ -1,0 +1,54 @@
+﻿body {
+  /* background-image : url(giphy.gif);*/
+}
+#txtHint {
+    
+    text-align : center;
+   color : white;
+
+   
+}
+#salle{
+    text-align : center;
+    color : white;
+}
+#centre{
+    text-align : center;
+    color : white;
+}
+/*#boutonAlerte {
+    opacity: 0.6;
+ 
+
+}
+#btnSalle{
+    opacity: 0.6;
+}
+#btnCentre{
+    opacity: 0.6;
+}*/
+#boutonAlerte :hover {
+    
+     color : lightgray;
+
+}
+#admin{
+     background-image : url(giphy.gif);
+     background-position : center;
+}
+.button{
+   
+}
+table{
+    color: white;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color : white;
+}
+#texte{
+    color : white;
+    text-align : center;
+    font-size : larger;
+}

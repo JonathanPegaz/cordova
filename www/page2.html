@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.x.x.min.css" />
+
+    <!--
+        Personnalisez la stratégie de sécurité de contenu dans la balise méta ci-dessous selon vos besoins. Ajoutez 'unsafe-inline' à default-src pour activer JavaScript directement dans les lignes.
+        Pour obtenir des détails, consultez http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <title>escapeGame</title>
+
+    <!-- Références escapeGame -->
+    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <div data-role="page" id="admin">
+        <div data-role="header">
+            <center class="titre">ESCAPE GAME FAN</center>
+        </div>
+        <div data-role="content">
+           
+           
+        <p id="texte">Score (Top 3 Joueurs)</p>
+            
+            <table style="width:100%" onload="myFunction()" >
+                <tr>
+                    <th>Joueur</th>
+                    <th>Salle</th>
+                    <th>Centre</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td id="J1">...</td>
+                    <td id="S1">...</td>
+                    <td id="C1">...</td>
+                    <td id="SC1">...</td>
+                   
+                </tr>
+                <tr>
+                    <td id="J2">...</td>
+                    <td id="S2">...</td>
+                    <td id="C2">...</td>
+                    <td id="SC2">...</td>
+                 
+                </tr>
+                <tr>
+                    <td id="J3">...</td>
+                    <td id="S3">...</td>
+                    <td id="C3">...</td>
+                    <td id="SC3">...</td>
+                  
+                </tr>
+               
+            </table>
+            <script>
+                Top();
+            </script>
+     
+        </div>
+<div data-role="footer" data-position="fixed">
+    <center>Escape game</center>
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#admin">retour</a></li>
+            <li><a href="#admin">Acceuil</a></li>
+            <li><a href="#admin">Valider</a></li>
+        </ul>
+    </div>
+</div>
+    </div>
+
+<div data-role="page" id="Config">
+    <div data-role="header">
+        <center class="titre">ESCAPE GAME FAN</center>
+    </div>
+    <div data-role="content">
+        <p>Page de configuration</p>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <center>Escape game</center>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#admin">Admin</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Référence Cordova ajoutée à votre application une fois générée. -->
+<script src="cordova.js"></script>
+<script src="scripts/platformOverrides.js"></script>
+<script src="scripts/jquery-1.8.0.min.js"></script>
+<script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+<script src="scripts/index.js"></script>
+</body>
+</html>
