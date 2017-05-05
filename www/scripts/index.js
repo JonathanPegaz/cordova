@@ -88,7 +88,7 @@ $("#boutonAlerte").click(function () {
     else {
         joueurAf.innerHTML = "...";
         
-        
+       
     }
     
 });
