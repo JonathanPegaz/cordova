@@ -50,7 +50,7 @@
 $("#boutonAlerte").click(function () {
     var joueurAf = document.getElementById('txtHint');
     if (document.getElementById('txtHint').innerHTML == "...") {
-        $.getJSON('http://172.31.254.131:8080/PhpstormProjects/untitled/index.php/Joueur', function (data) {
+        $.getJSON('http://192.168.10.21:8080/PhpstormProjects/untitled/index.php/Joueur', function (data) {
             
 
         
@@ -96,7 +96,7 @@ $("#boutonAlerte").click(function () {
 $("#btnSalle").click(function () {
     var salleAf = document.getElementById('salle');
     if (document.getElementById('salle').innerHTML == "...") {
-        $.getJSON('http://172.31.254.131:8080/PhpstormProjects/untitled/index.php/Joueur', function (data) {
+        $.getJSON('http://192.168.10.21:8080/PhpstormProjects/untitled/index.php/Joueur', function (data) {
             
             var ele2 = JSON.stringify(data, ['id','centre']);
             var compte2 = ele2.length;
@@ -140,7 +140,7 @@ $("#btnSalle").click(function () {
 $("#btnCentre").click(function () {
     var centreAf = document.getElementById('centre');
     if (document.getElementById('centre').innerHTML == "...") {
-        $.getJSON('http://172.31.254.131:8080/PhpstormProjects/untitled/index.php/Centre', function (data) {
+        $.getJSON('http://192.168.10.21:8080/PhpstormProjects/untitled/index.php/Centre', function (data) {
             
             var ele3 = JSON.stringify(data, ['id', 'nom', 'lieu', 'adresse']);
             var compte3 = ele3.length;
@@ -185,7 +185,7 @@ $("#btnCentre").click(function () {
 
 function Top() {
    
-    $.getJSON('http://172.31.254.131:8080/PhpstormProjects/untitled/index.php/Tournoi', function (data) {
+    $.getJSON('http://192.168.10.21:8080/PhpstormProjects/untitled/index.php/Tournoi', function (data) {
             var topJ = JSON.stringify(data);
             var compte = topJ.length;
             var i = 0;
