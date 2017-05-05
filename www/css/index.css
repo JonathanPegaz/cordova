@@ -39,16 +39,13 @@
 .button{
    
 }
-table{
-    color: white;
-}
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    border-color : white;
-}
 #texte{
     color : white;
     text-align : center;
-    font-size : larger;
+    font-size : 150%;
+}
+#tournoi{
+    color : white;
+    text-align : center;
+   font-size : 125%;
 }
